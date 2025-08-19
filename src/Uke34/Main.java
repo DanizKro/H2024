@@ -1,4 +1,4 @@
-package Uke1;
+package Uke34;
 
 public class Main {
 
