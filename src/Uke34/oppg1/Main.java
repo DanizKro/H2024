@@ -9,13 +9,18 @@ public class Main {
 		
 		Tallformat format1 = new Stjerneformat();
 		
-		skrivUtTallene(tab1, format1);
+//		skrivUtTallene(tab1, format1);
 		
-		System.out.println();
+//		System.out.println();
 		
 		Tallformat format2 = new Hashtag();
 		
-		skrivUtTallene(tab1, format2);
+//		skrivUtTallene(tab1, format2);
+	
+		// Lambda(anonym classe) som har en funksjon lagert i en variabel
+		Runnable skrivUtAlle = () -> System.out.print("Test");
+		
+		skrivUtAlle.run();
 
 	}
 	
@@ -25,6 +30,7 @@ public class Main {
 			System.out.println(format.somStreng(tab[i]));
 		}
 	}
+	
 
 	
 	
